@@ -14,6 +14,8 @@ mod "puppetlabs/motd"
 mod "puppetlabs/acl"
 mod "puppetlabs/powershell"
 mod "puppetlabs/reboot"
+mod "puppetlabs/apache"
+mod "puppetlabs/vcsrepo"
 
 #Community / Approved Modules
 mod "ncorrare/bginfo", "0.3.1"
@@ -23,11 +25,12 @@ mod "badgerious/windows_env"
 mod "lwf/remote_file"
 #mod "liamjbennett/win_facts"
 mod "puppet/download_file"
+
 # Modules from Git
 # Examples: https://github.com/puppetlabs/r10k/blob/master/doc/puppetfile.mkd#examples
-#mod 'apache',
-#  :git    => 'https://github.com/puppetlabs/puppetlabs-apache',
-#  :commit => '83401079053dca11d61945bd9beef9ecf7576cbf'
+mod 'labsignups',
+  :git    => 'https://github.com/ncorrare/ncorrare-labsignups',
+  :branch => 'master'
 
 #mod 'apache',
 #  :git    => 'https://github.com/puppetlabs/puppetlabs-apache',
