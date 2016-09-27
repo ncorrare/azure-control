@@ -1,0 +1,19 @@
+---
+profile::windows::logonmessage::motdmessage: "Welcome to this Windows Server. Access to this node is restricted to authorized users"
+profile::windows::localadmin::localadmin: 'localadministrator'
+profile::windows::localadmin::adminpassword: 'l33tp4ssw0rd'
+profile::windows::basefirewall::openports:
+  - 3389
+  - 5985
+  - 5986
+ntpservers:
+  us.pool.ntp.org:
+    '0x02'
+  time.windows.com:
+    '0x01'
+profile::windows::ecommerceweb::websitename: 'FourthCoffee'
+profile::windows::ecommerceweb::zipname: 'FourthCoffeeWebSiteContent.zip'
+profile::windows::ecommerceweb::sourcerepo: 'https://github.com/msutter/fourthcoffee/raw/master'
+profile::windows::ecommerceweb::destinationpath: 'C:\inetpub\FourthCoffee'
+profile::windows::ecommerceweb::defaultwebsitepath: 'C:\inetpub\wwwroot'
+profile::windows::ecommerceweb::zippath: 'C:\tmp'
