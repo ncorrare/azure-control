@@ -16,6 +16,7 @@ mod "puppetlabs/powershell"
 mod "puppetlabs/reboot"
 mod "puppetlabs/apache"
 mod "puppetlabs/vcsrepo"
+mod "stahnma/epel"
 
 #Community / Approved Modules
 mod "ncorrare/bginfo", "0.3.1"
