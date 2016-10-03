@@ -33,6 +33,9 @@ mod 'labsignups',
   :git    => 'https://github.com/ncorrare/ncorrare-labsignups',
   :branch => 'master'
 
+mod 'node_manager':
+  :git    => 'https://github.com/puppetlabs/prosvcs-node_manager.git',
+  :branch => 'master'
 #mod 'apache',
 #  :git    => 'https://github.com/puppetlabs/puppetlabs-apache',
 #  :branch => 'docs_experiment'
