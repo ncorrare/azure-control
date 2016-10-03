@@ -1,4 +1,6 @@
 class profile::azure {
   $users = hiera('users')
-  create_resources(profile::labmachines, $users)
+  $users.each | Hash $machine | {
+    create_resources(profile::labmachines, $machine)
+  }
 }
