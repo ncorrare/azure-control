@@ -15,6 +15,8 @@ define profile::labmachine (
     size              => 'Standard_DS1_v2',
     subnet            => 'default',
     virtual_network   => 'Group IDC IDC',
+    user              => $user,
+    password          => $password,
   }
 
 }
