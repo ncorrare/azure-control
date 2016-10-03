@@ -4,7 +4,6 @@ define profile::labmachine (
   $fullname,
   $email,
 ) {
-  notify { "Creating Lab Machine $username for $fullname": }
   azure_vm_classic { "$username-idcARN":
     ensure            => 'running',
     cloud_service     => "$username-idcARN",
