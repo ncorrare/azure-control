@@ -17,6 +17,8 @@ mod "puppetlabs/reboot"
 mod "puppetlabs/apache"
 mod "puppetlabs/vcsrepo"
 mod "stahnma/epel"
+mod "pltraining/rbac"
+mod "puppetlabs/azure"
 
 #Community / Approved Modules
 mod "ncorrare/bginfo", "0.3.1"
